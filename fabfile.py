@@ -6,7 +6,7 @@ from fabric.contrib.files import exists
 import os
 
 app_dir = '/apps/fortis'
-git_repo = 'https://github.com/musale/fortis.git'
+git_repo = 'git@github.com:musale/fortis.git'
 
 tmp = "/tmp/fortis"
 tmp_f = "%s/fortis.tar.gz" % tmp

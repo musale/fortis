@@ -1,2 +1,5 @@
- Django
-
+Django==1.9.7
+MySQL-python==1.2.5
+django-useful==0.1.2
+gunicorn==19.6.0
+pytz==2016.7
