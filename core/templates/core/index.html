@@ -1,0 +1,282 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FA</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet" type="text/css">
+    <!--- Bootstrap like d'uh! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" /> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">FA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Company</h1>
+        <p>We specialize in blablabla</p>
+    </div>
+    <div id="about" class="container-fluid text-center">
+        <h2>&mdash; About Company Page &mdash;</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorum officiis consequuntur quidem magni delectus quod, repudiandae modi cupiditate explicabo tempora quia dolore voluptas amet quae praesentium, quam deleniti alias.</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestias, saepe quod nam quaerat tenetur, culpa sapiente? Eos, provident. Delectus laudantium aut quas quasi dolor, voluptates saepe vitae blanditiis minus.</h5>
+        <button class="btn btn-default btn-lg">GET IN TOUCH</button>
+    </div>
+    <div class="container-fluid home">
+        <h2 class="text-center">&mdash; What We Stand For &mdash;</h2>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h4>&#8268; Our Freaking Values &#8269;</h4>
+                <h5 class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum earum ipsa natus necessitatibus blanditiis minus beatae doloremque dolorum. Ea explicabo, numquam architecto eveniet cumque nam animi corrupti distinctio nihil omnis.</h5>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-right">
+                <h4>&#8268; Our Lovely Mission &#8269;</h4>
+                <h5 class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum earum ipsa natus necessitatibus blanditiis minus beatae doloremque dolorum. Ea explicabo, numquam architecto eveniet cumque nam animi corrupti distinctio nihil omnis.</h5>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <h4>&#8268; Our Awesome Vision &#8269;</h4>
+                <h5 class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum earum ipsa natus necessitatibus blanditiis minus beatae doloremque dolorum. Ea explicabo, numquam architecto eveniet cumque nam animi corrupti distinctio nihil omnis.</h5>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div id="services" class="container-fluid text-center">
+        <h2 class="text-center">&mdash; We Do Awesome Stuff Like &mdash;</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-md-4">
+                <span><i class="fa fa-bed fa-5x" aria-hidden="true"></i></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio" class="container-fluid home">
+        <h2 class="text-center">&mdash; Some People We've Worked With &mdash;</h2>
+        <h4 class="text-center">And they're saying good things about our services</h4>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-info">GET IN TOUCH</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 class="text-center">&mdash; We'veBuilt This With Our Solutions &mdash;</h2>
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="http://fakeimg.pl/250x250/" alt="Project 1">
+                    <p><strong>Project 1</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="http://fakeimg.pl/250x250/" alt="Project 2">
+                    <p><strong>Project 2</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="http://fakeimg.pl/250x250/" alt="Project 3">
+                    <p><strong>Project 3</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="http://fakeimg.pl/250x250/" alt="Project 4">
+                    <p><strong>Project 4</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-default">GET A QUOTE</button>
+        </div>
+    </div>
+    <div id="contact" class="container-fluid home">
+        <h2 class="text-center">&mdash; Make It Personal &mdash;</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="text-center">About</h4>
+                <div class="text-center">
+                    <p>Home</p>
+                    <p>Home</p>
+                    <p>Home</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="text-center">About</h4>
+                <div class="text-center">
+                    <p>Home</p>
+                    <p>Home</p>
+                    <p>Home</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="text-center">Visit | Call | Email us</h4>
+                <div class="text-left">
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Nairobi, KE</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i> +254 707 777 777</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@fortis.com</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="name" placeholder="Your Names">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Send me a copy
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function() {
+            $(".slideanim").each(function() {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+    </script>
+    <!-- JS Block -->
+    {% block js %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    {% endblock %}
+</body>
+
+</html>

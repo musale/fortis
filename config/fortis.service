@@ -1,0 +1,12 @@
+After=network.target
+
+[Service]
+User=vagrant
+Group=vagrant
+
+WorkingDirectory=/apps/fortis/fortis
+ExecStart=/usr/bin/gunicorn --workers 2 -t 1200 --bind unix:/apps/fortis/fortis.sock fortis.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
