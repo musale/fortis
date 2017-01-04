@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from config.db import DB, DEBUG
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$sy9v(fyt_#c^k4rw5&hcwix&_sp031(fqg#s&%#-!i$h5@9kr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -77,15 +78,57 @@ WSGI_APPLICATION = 'fortis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fortis',
-        'USER': 'root',
-        'PASSWORD': 'root@fmob',
-        'HOST': 'fortis',
+        'NAME': DB['name'],
+        'USER': DB['user'],
+        'PASSWORD': DB['password'],
+        'HOST': DB['host'],
     },
     'develop': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s]" +
+            " %(message)s",
+            'datefmt': "%d/%b/%Y %H:%M:%S"
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/var/log/fortis/app/fortis.log',
+            'formatter': 'verbose',
+            'maxBytes': 10 * 1024 * 1024,
+            'backupCount': 7,
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'mail_admins'],
+            'propagate': True,
+            'level': 'INFO',
+        },
+        'core': {
+            'handlers': ['file', 'mail_admins'],
+            'propagate': True,
+            'level': 'INFO',
+        },
+    }
 }
 
 
