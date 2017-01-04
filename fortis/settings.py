@@ -76,9 +76,16 @@ WSGI_APPLICATION = 'fortis.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fortis',
+        'USER': 'root',
+        'PASSWORD': 'root@fmob',
+        'HOST': 'fortis',
+    },
+    'develop': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
 }
 
 
@@ -120,4 +127,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = '/apps/fortis_project/static'
